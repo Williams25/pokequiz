@@ -6,7 +6,7 @@ import GitHubCorner from '../src/components/GitHubCorner'
 import QuizLogo from '../src/components/QuizLogo'
 import db from '../db.json'
 
-export default function Home() {
+const Home = () => {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
@@ -28,7 +28,9 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/Williams25" />
+      <GitHubCorner projectUrl={db.githubURL} />
     </QuizBackground>
   )
 }
+
+export default Home

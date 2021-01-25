@@ -11,6 +11,10 @@ const Wrapper = styled.div`
 
 const SVGWrapper = styled.svg`
   fill: ${({ theme }) => theme.colors.dark};
+  & :hover {
+    transition: 0.5s fill;
+    fill: ${({ theme }) => theme.colors.duskyBlue};
+  }
   color: ${({ theme }) => theme.colors.contrastText};
   cursor: pointer;
   &:hover .octo-arm{

@@ -1,6 +1,7 @@
 {
+  "githubURL": "https://github.com/Williams25",
   "logo": "https://logodownload.org/wp-content/uploads/2017/08/pokemon-logo.png",
-  "bg": "https://images4.alphacoders.com/206/206266.jpg",
+  "bg": "https://lh3.googleusercontent.com/rcDqA4k5kz6JuGEeA2sgHJXVoCw6yBICdvc5pZyyLRyW404Y4GYpCcl48K4RG4E7ztR97-JH8xIdf7gv0SettDL-hyEUex1C0gvk0Ha0PvuU0Vc5R3YRmYXKHPla78gvU6dDWahD8B7xXmhzWzETqMc0uVZEysDIs2rAc3aNN0NXszDU-wnPqPc6p1N5O-lRnZlTDS7ay3tkvbSDniQXi5YguAMARfLEXiTR_HjLNcOpXqoYaPeph3laqVKqpYWd288iMk3vmphah_KvzHemGsEBcFZzeZhwMH5N2jEaofu-AaOeHdiT8C2sBZKkSc4ZZkdqn8EFqoWQlNRdDNw315af5RB3HLMEK-vague3WNqEEI4ybBmI5pqUCTMFmulh2XXjLuA0zvs9L8BkZjCpbsI_7nZSbIUe_hII3T_7gN5uDmwHK-5hGvySaK8TcBwr-5D_ptdblb09Qgv5u38ZuBc9Kn6vf0yhoSd2bEZLX8UoSlXHUO2yxKAUc764rxy232Y-RxFlfQMpc4wDZFjlGUN4xQ_RgsBDf8S9pdzB67mZ-XzXux5aYQ20wcaKGRX1o40eLBW88upgw_o7-ZhifPd51W5jhPKmCrzOxfrHlnTZjxOWezw5zPKhU0NtV8Ivf4Rib8n9oCSQPBqOUF4F9pg_OEhMVI1bQi1UBUIK4WfQz4MJNeR-pHw92Qs0z3c=w675-h666-no?authuser=0",
   "title": "POKEQUIZ",
   "description": "Teste os seus conhecimentos sobre o mundo Pokemon.",
   "questions": [
@@ -38,7 +39,9 @@
       "mainBg": "#171B35",
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",
-      "success": "#4CAF50"
+      "success": "#4CAF50",
+      "background": "#74a9db",
+      "duskyBlue": "#475F94"
     },
     "borderRadius": "4px"
   }
