@@ -30,6 +30,7 @@ Form.Button = styled.button`
   outline: none;
   box-sizing: border-box;
   background-color:${({ disalbledButton, theme }) => !disalbledButton ? theme.colors.slateBlue : '#1d384a'};
+  transition: 0.3s background-color;
   color: #fff;
   border: none;
   border-radius: 4px;
