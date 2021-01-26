@@ -35,7 +35,7 @@ export default function App({ Component, pageProps }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2? family = Lato: wght @ 700 & display = swap" rel="stylesheet" />
         <title>PokeQuiz</title>
-        <link rel="shortcut icon" href="https://uploaddeimagens.com.br/images/003/052/749/original/iconfinder_4_1563653.png?1611683156" />
+        <link rel="shortcut icon" href="https://uploaddeimagens.com.br/images/003/053/050/original/pokebola.png?1611691679" />
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
