@@ -6,26 +6,29 @@
   "description": "Teste os seus conhecimentos sobre o mundo Pokemon.",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://observatoriodegames.uol.com.br/wp-content/uploads/2020/07/Pok%C3%A9mon-Journeys.png",
+      "title": "Por que o Pikachu não fica em sua Pokebola?",
       "description": "Essa é pra aquecer",
       "answer": 2,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
-      ]
+        "ele não gosta",
+        "ele acha apertada",
+        "ele acha muito quente"
+      ],
+      "resposta": "ele não gosta"
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
+      "image": "https://pm1.narvii.com/6213/708eab9b3de1120326c0e20ba73c32726e88e39d_hq.jpg",
+      "title": "Qual o nome da mãe de Ash?",
       "description": "Faz tempo em haha",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
-      ]
+          "Delia",
+          "Noelle",
+          "Mist",
+          "Touka"
+      ],
+      "resposta": "Delia"
     }
   ],
   "external": [

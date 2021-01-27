@@ -19,8 +19,9 @@ Form.Input = styled.input`
   text-align: start;
   padding: 1rem;
   font-weight: 500;
-  & :hover {
-    transition: 0.3s border;
+  transition: 0.3s border;
+  
+  & :hover, &:focus {
     border: 1px solid ${({ theme }) => theme.colors.duskyBlue};
   }
 `

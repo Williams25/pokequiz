@@ -40,5 +40,26 @@ Widget.Content = styled.div`
     padding: 0
   }
 `
-
+Widget.Topic = styled.a`
+  width: 100%;
+  height: auto;
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+`
 export default Widget
