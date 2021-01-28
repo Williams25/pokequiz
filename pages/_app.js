@@ -32,6 +32,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <meta name="description" content="Um quiz criado para testar seus conhecimentos no mundo Pokemon." />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2? family = Lato: wght @ 700 & display = swap" rel="stylesheet" />
         <title>PokeQuiz</title>
