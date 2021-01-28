@@ -1,5 +1,7 @@
 {
   "githubURL": "https://github.com/Williams25",
+  "loading": "https://media.giphy.com/media/VgwUZvEOlLPgY/giphy.gif",
+  "result": "https://media.giphy.com/media/Jir3toQTWW9Ne/giphy.gif",
   "logo": "https://logodownload.org/wp-content/uploads/2017/08/pokemon-logo.png",
   "bg": "https://uploaddeimagens.com.br/images/003/052/701/original/banner.png?1611680441",
   "title": "POKEQUIZ",
@@ -9,7 +11,7 @@
       "image": "https://observatoriodegames.uol.com.br/wp-content/uploads/2020/07/Pok%C3%A9mon-Journeys.png",
       "title": "Por que o Pikachu não fica em sua Pokebola?",
       "description": "Essa é pra aquecer",
-      "answer": 2,
+      "answer": 0,
       "alternatives": [
         "ele não gosta",
         "ele acha apertada",
@@ -45,7 +47,8 @@
       "success": "#4CAF50",
       "background": "#74a9db",
       "duskyBlue": "#475F94",
-      "slateBlue": "#214761"
+      "slateBlue": "#214761",
+      "colorBack": "#1d384a"
     },
     "borderRadius": "4px"
   }

@@ -3,14 +3,11 @@ import { useEffect, useState } from 'react'
 
 import QuizBackground from '../src/components/QuizBackground'
 import QuizContainer from '../src/components/QuizContainer'
-import Widget from '../src/components/Widget'
 import LoadingWidget from '../src/components/LoadingWidget'
 import GitHubCorner from '../src/components/GitHubCorner'
 import QuizLogo from '../src/components/QuizLogo'
-import FormQuiz from '../src/components/FormQuiz'
-import Input from '../src/components/Input'
-import Button from '../src/components/Button'
-import QuestionWidget, {correctAnswers} from '../src/components/QuestionWidget'
+import QuestionWidget, { correctAnswers } from '../src/components/QuestionWidget'
+import ResultWidget from '../src/components/ResultWidget'
 import db from '../db.json'
 
 const screen = {
@@ -24,13 +21,21 @@ const QuizPage = props => {
   const [name, setName] = useState('')
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [screenStates, setScreenStates] = useState(screen.LOADING)
-
+  const [results, setResults] = React.useState([])
   const questionIndex = currentQuestion
   const question = db.questions[questionIndex]
+  const totalQuestions = db.questions.length
 
   const handleName = _ => {
     let { name } = router.query
     setName(name)
+  }
+
+  const addResult = result => {
+    setResults([
+      ...results,
+      result,
+    ]);
   }
 
   const handleSubmit = _ => {
@@ -47,7 +52,7 @@ const QuizPage = props => {
     setTimeout(() => {
       setScreenStates(screen.QUIZ)
       console.log('quiz ', screenStates)
-    }, 1 * 1000)
+    }, 1 * 2000)
   }
 
 
@@ -61,7 +66,7 @@ const QuizPage = props => {
       <QuizContainer>
         <QuizLogo />
 
-        {screenStates === screen.LOADING && <LoadingWidget />}
+        {screenStates === screen.LOADING && <LoadingWidget loading={db.loading} />}
 
         {
           screenStates === screen.QUIZ &&
@@ -71,11 +76,20 @@ const QuizPage = props => {
               questionIndex={questionIndex}
               totalQuestions={db.questions.length}
               submit={handleSubmit}
+              addResult={addResult}
             />
           </>
         }
 
-        {screenStates === screen.RESULT && <p>Parabéns {' '} {name} você acertou {correctAnswers()} questões sobre o PokeQuiz</p>}
+        {
+          screenStates === screen.RESULT &&
+          <ResultWidget
+            name={name}
+            result={results}
+            total={totalQuestions}
+            loading={db.result}
+          />
+        }
       </QuizContainer>
       <GitHubCorner projectUrl={db.githubURL} />
     </QuizBackground>

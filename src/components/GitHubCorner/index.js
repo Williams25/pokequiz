@@ -10,9 +10,9 @@ const Wrapper = styled.div`
 `;
 
 const SVGWrapper = styled.svg`
-  fill: ${({ theme }) => theme.colors.dark};
+  fill: ${({ theme }) => theme.colors.colorBack};
+  transition: 0.5s fill;
   & :hover {
-    transition: 0.5s fill;
     fill: ${({ theme }) => theme.colors.duskyBlue};
   }
   color: ${({ theme }) => theme.colors.contrastText};

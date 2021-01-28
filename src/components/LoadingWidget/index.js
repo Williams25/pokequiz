@@ -1,14 +1,24 @@
 import Widget from '../Widget'
 
-const LoadingWidget = () => {
+const LoadingWidget = ({ loading }) => {
   return (
     <Widget>
       <Widget.Header>
-        Carregando...
+        <h1>Carregando...</h1>
       </Widget.Header>
 
       <Widget.Content>
-        [Desafio do Loading]
+        <img
+          alt="Descrição"
+          style={{
+            width: '100%',
+            height: 'auto',
+            objectFit: 'cover',
+            border: 'none',
+            borderRadius: '4px'
+          }}
+          src={loading}
+        />
       </Widget.Content>
     </Widget>
   );
