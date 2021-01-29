@@ -1,14 +1,14 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 
-import QuizBackground from '../src/components/QuizBackground'
-import QuizContainer from '../src/components/QuizContainer'
-import LoadingWidget from '../src/components/LoadingWidget'
-import GitHubCorner from '../src/components/GitHubCorner'
-import QuizLogo from '../src/components/QuizLogo'
-import QuestionWidget, { correctAnswers } from '../src/components/QuestionWidget'
-import ResultWidget from '../src/components/ResultWidget'
-import db from '../db.json'
+import QuizBackground from '../../src/components/QuizBackground'
+import QuizContainer from '../../src/components/QuizContainer'
+import LoadingWidget from '../../src/components/LoadingWidget'
+import GitHubCorner from '../../src/components/GitHubCorner'
+import QuizLogo from '../../src/components/QuizLogo'
+import QuestionWidget, { correctAnswers } from '../../src/components/QuestionWidget'
+import ResultWidget from '../../src/components/ResultWidget'
+import db from '../../db.json'
 
 const screen = {
   QUIZ: 'QUIZ',

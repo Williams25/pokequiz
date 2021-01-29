@@ -1,22 +1,18 @@
 import { useState } from 'react'
 
 import Widget from '../Widget'
-import FormQuiz from '../FormQuiz'
 import AlternativesForm from '../AlternativesForm'
 import Input from '../Input'
 import Button from '../Button'
-
-let answer = 0
+import BackLinkArrow from '../BackLinkArrow'
 
 const QuestionWidget = ({ question, questionIndex, totalQuestions, submit, addResult }) => {
 
-  const [index, setIndex] = useState(-1)
-
   const [selectedAlternative, setSelectedAlternative] = useState(undefined)
   const [isQuestionSubmited, setIsQuestionSubmited] = useState(false)
-  const questionId = `question__${questionIndex}`
   const isCorrect = selectedAlternative === question.answer
   const hasAlternativeSelected = selectedAlternative !== undefined
+  const questionId = `question__${questionIndex}`
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -26,13 +22,16 @@ const QuestionWidget = ({ question, questionIndex, totalQuestions, submit, addRe
       submit()
       setIsQuestionSubmited(false)
       setSelectedAlternative(undefined)
-    }, 2 * 1000);
+    }, 2 * 1000)
+
+    console.log(selectedAlternative, isQuestionSubmited)
   }
 
   return (
     <Widget>
 
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h1>{`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h1>
       </Widget.Header>
       <img
@@ -91,7 +90,5 @@ const QuestionWidget = ({ question, questionIndex, totalQuestions, submit, addRe
     </Widget>
   );
 }
-
-export const correctAnswers = () => answer
 
 export default QuestionWidget

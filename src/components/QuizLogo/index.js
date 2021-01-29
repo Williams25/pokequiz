@@ -4,9 +4,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import db from '../../../db.json'
 
-function Logo({ className }) {
+function Logo({ className, ...props }) {
   return (
-    <img className={className} width="100%" height="120" src={db.logo} alt="logo" />
+    <div {...props}>
+      <img className={className} width="100%" height="120" src={db.logo} alt="logo" />
+    </div>
   )
 }
 
