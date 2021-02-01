@@ -1,4 +1,5 @@
 import Widget from '../Widget'
+import Loading from '../Loading'
 
 const LoadingWidget = ({ loading }) => {
   return (
@@ -10,19 +11,20 @@ const LoadingWidget = ({ loading }) => {
       <Widget.Content>
         {
           loading ? (
-            <img
-              alt="Descrição"
-              style={{
-                width: '100%',
-                height: 'auto',
-                objectFit: 'cover',
-                border: 'none',
-                borderRadius: '4px'
-              }}
-              src={loading}
-            />
+            // <img
+            //   alt="Descrição"
+            //   style={{
+            //     width: '100%',
+            //     height: 'auto',
+            //     objectFit: 'cover',
+            //     border: 'none',
+            //     borderRadius: '4px'
+            //   }}
+            //   src={loading}
+            // />
+            <Loading />
           ) :
-            "Caregando..."
+            <Loading />
         }
 
       </Widget.Content>

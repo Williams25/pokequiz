@@ -6,7 +6,7 @@ import QuizContainer from '../../src/components/QuizContainer'
 import LoadingWidget from '../../src/components/LoadingWidget'
 import GitHubCorner from '../../src/components/GitHubCorner'
 import QuizLogo from '../../src/components/QuizLogo'
-import QuestionWidget, { correctAnswers } from '../../src/components/QuestionWidget'
+import QuestionWidget from '../../src/components/QuestionWidget'
 import ResultWidget from '../../src/components/ResultWidget'
 import db from '../../db.json'
 
@@ -52,7 +52,7 @@ const QuizPage = props => {
     setTimeout(() => {
       setScreenStates(screen.QUIZ)
       console.log('quiz ', screenStates)
-    }, 1 * 2000)
+    }, 4 * 1000)
   }
 
 

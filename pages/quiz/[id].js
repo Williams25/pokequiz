@@ -8,7 +8,7 @@ const QuizDaGaleraPage = ({ dbExterno }) => {
         externalQuestions={dbExterno.questions}
         externalBg={dbExterno.bg}
         githubURL={dbExterno.githubURL}
-        />
+      />
     </ThemeProvider>
   )
 }
@@ -28,7 +28,7 @@ export const getServerSideProps = async (context) => {
       console.error(err);
     });
 
-  console.log('sad ', context.query)
+
   return {
     props: {
       dbExterno
